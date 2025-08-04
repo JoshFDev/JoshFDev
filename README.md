@@ -1,18 +1,20 @@
-<h2 align="left">Hi 👋! My name is Joshua Sebastián Aboytes Uribe and I'm a Computer Engineering student from UAEMex 🇲🇽</h2>
+<h2 align="center">Hi 👋! I'm Joshua Sebastián Aboytes Uribe</h2>
+<h3 align="center">💻 Computer Engineering student at UAEMex 🇲🇽</h3>
 
-###
+---
+
+### 📊 GitHub Stats
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=JoshFDev&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&hide_border=false" height="150" alt="GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=JoshFDev&layout=compact&langs_count=10&theme=dracula&hide_border=false" height="150" alt="Top Languages" />
 </div>
 
-###
+---
 
-###
+### 💻 Tech Stack
 
 <div align="left">
-  <!-- Lenguajes y herramientas -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" alt="C#" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30" alt="Java" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="Python" />
@@ -24,9 +26,10 @@
   <img src="https://img.shields.io/badge/XAMPP-FB7A24?style=flat&logo=xampp&logoColor=white" height="30" alt="XAMPP" />
 </div>
 
-###
+---
 
-<!-- Redes sociales -->
+### 🌐 Connect with me
+
 <div align="left">
   <a href="https://www.linkedin.com/in/aboytes-uribe-joshua-sebastián-419511281" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" />
@@ -39,10 +42,18 @@
   </a>
 </div>
 
-###
+---
 
-<br clear="both">
+### 📈 Contribution Streak (Live Chart)
 
-<!-- Snake animation -->
-<img src="https://raw.githubusercontent.com/maurodesouza/maurodesouza/output/snake.svg" alt="Snake animation" />
-###
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=JoshFDev&theme=dracula&hide_border=false" alt="GitHub Streak" />
+</div>
+
+---
+
+### 🙌 Thanks for visiting my profile!
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=435&lines=Welcome+to+my+GitHub!;Always+learning+and+building+new+things!;Let's+connect+%F0%9F%91%8B" alt="Typing SVG" />
+</p>
