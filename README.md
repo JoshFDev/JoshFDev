@@ -1,4 +1,4 @@
-<h2 align="center">Hi 👋! I'm Joshua Sebastián Aboytes Uribe</h2>
+<h2 align="center">Hello 👋! I'm Joshua Sebastián Aboytes Uribe</h2>
 <h3 align="center">💻 Computer Engineering student at UAEMex 🇲🇽</h3>
 
 ---
