@@ -4,16 +4,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Frontend+Developer;JavaScript+%7C+TypeScript+%7C+React+%7C+Angular;Always+learning+new+things+%F0%9F%9A%80" />
 </p>
 
----
-
-## GitHub Stats
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JoshFDev&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=JoshFDev&layout=compact&langs_count=10&theme=dracula" height="170" />
-</div>
-
----
-
 ## Tech Stack
 
 ### 👨‍💻 Programming Languages
