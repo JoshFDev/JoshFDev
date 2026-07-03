@@ -1,7 +1,7 @@
 <h2 align="center">Hello ! I'm Joshua Sebastián Aboytes Uribe</h2>
 <h3 align="center"> Computer Engineering student at UAEMex 🇲🇽</h3>
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Frontend+Developer;JavaScript+%7C+TypeScript+%7C+React+%7C+Angular;Always+learning+new+things+%F0%9F%9A%80" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Web+Developer;JavaScript+%7C+TypeScript+%7C+React+%7C+Angular;Always+learning+new+things+%F0%9F%9A%80" />
 </p>
 
 ## Tech Stack
@@ -28,6 +28,7 @@
 ### 🗄️ Databases
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="50" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="50" />
 </div>
 
 ---
