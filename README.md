@@ -6,7 +6,7 @@
 
 ## Tech Stack
 
-### 👨‍💻 Programming Languages
+### Programming Languages
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="50" />
@@ -16,7 +16,7 @@
 </div>
 <br>
 
-### 🌐 Web Technologies & Frameworks
+### Web Technologies & Frameworks
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="50" />
@@ -25,7 +25,7 @@
 </div>
 <br>
 
-### 🗄️ Databases
+### Databases
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="50" />
