@@ -4,7 +4,7 @@
 
 ### Estudiante de Ingeniería en Computación @ UAEMex 🇲🇽
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Software+Developer;JavaScript+%7C+TypeScript+%7C+Java+%7C+C%23+%7C+Python;Construyendo+soluciones+de+extremo+a+extremo+%F0%9F%9A%80" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Software+Developer;JavaScript+%7C+TypeScript+%7C+Java+%7C+C%23+%7C+Python;Construyendo+soluciones+de+extremo+a+extremo+%F0%9F%9A%80" alt="Typing SVG" />
 
 </div>
 
@@ -12,11 +12,11 @@
 
 ## 💻 Sobre mí
 
-Soy estudiante de Ingeniería en Computación enfocado en convertirme en un **desarrollador de software full-stack / generalista**, no solo en frontend. Me interesa entender el ciclo completo de una aplicación: desde la lógica de negocio y las bases de datos, hasta la interfaz que usa la gente.
+Soy estudiante de Ingeniería en Computación enfocado en convertirme en un **desarrollador de software**. Me interesa entender el ciclo completo de una aplicación: lógica de negocio, bases de datos y buenas prácticas de desarrollo.
 
-- 🔭 Actualmente construyendo proyectos con **React, Angular, Java y C#**
-- 🌱 Aprendiendo a profundizar en **backend, bases de datos y buenas prácticas de arquitectura**
-- 🎯 Meta: crecer como desarrollador de software versátil, capaz de moverse entre frontend, backend y bases de datos
+- 🔭 Actualmente construyendo proyectos con **Java, C# y JavaScript/TypeScript**
+- 🌱 Aprendiendo a profundizar en **bases de datos, Docker y buenas prácticas de arquitectura de software**
+- 🎯 Meta: crecer como desarrollador de software versátil y sólido en fundamentos
 - ⚡ Me gusta aprender cosas nuevas constantemente
 
 <br>
@@ -32,14 +32,6 @@ Soy estudiante de Ingeniería en Computación enfocado en convertirme en un **de
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" height="50" />
 </div>
 
-### Frontend
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" title="React" height="50" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" title="Angular" height="50" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5" height="45" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" height="45" />
-</div>
-
 ### Backend & Bases de Datos
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title="Node.js" height="50" />
@@ -52,6 +44,7 @@ Soy estudiante de Ingeniería en Computación enfocado en convertirme en un **de
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" height="50" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="VS Code" height="50" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" title="Postman" height="50" />
 </div>
@@ -92,5 +85,5 @@ Soy estudiante de Ingeniería en Computación enfocado en convertirme en un **de
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=00F7FF&center=true&vCenter=true&width=550&lines=Gracias+por+visitar+mi+perfil!;Software+Developer+en+formación;Construyamos+algo+increíble+juntos+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=00F7FF&center=true&vCenter=true&width=550&lines=Gracias+por+visitar+mi+perfil!;Software+Developer+en+formación;Construyamos+algo+increíble+juntos+%F0%9F%9A%80" alt="Typing SVG" />
 </div>
