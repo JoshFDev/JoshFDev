@@ -14,10 +14,10 @@
 
 Soy estudiante de Ingeniería en Computación enfocado en convertirme en un **desarrollador de software**. Me interesa entender el ciclo completo de una aplicación: lógica de negocio, bases de datos y buenas prácticas de desarrollo.
 
-- 🔭 Actualmente construyendo proyectos con **Java, C# y JavaScript/TypeScript**
-- 🌱 Aprendiendo a profundizar en **bases de datos, Docker y buenas prácticas de arquitectura de software**
-- 🎯 Meta: crecer como desarrollador de software versátil y sólido en fundamentos
-- ⚡ Me gusta aprender cosas nuevas constantemente
+- Actualmente construyendo proyectos con **Java, C# y JavaScript/TypeScript**
+- Aprendiendo a profundizar en **bases de datos, Docker y buenas prácticas de arquitectura de software**
+- Meta: crecer como desarrollador de software versátil y sólido en fundamentos
+- Me gusta aprender cosas nuevas constantemente
 
 <br>
 
