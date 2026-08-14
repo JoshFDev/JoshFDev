@@ -10,7 +10,7 @@
 
 <br>
 
-## 💻 Sobre mí
+## Sobre mí
 
 Soy estudiante de Ingeniería en Computación enfocado en convertirme en un **desarrollador de software**. Me interesa entender el ciclo completo de una aplicación: lógica de negocio, bases de datos y buenas prácticas de desarrollo.
 
