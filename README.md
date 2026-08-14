@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hola, soy Joshua Sebastián Aboytes Uribe 👋
+# Hola, soy Joshua Sebastián Aboytes Uribe !
 
 ### Estudiante de Ingeniería en Computación @ UAEMex 🇲🇽
 
