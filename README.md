@@ -74,11 +74,7 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 ## Actividad reciente
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JoshFDev/JoshFDev/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JoshFDev/JoshFDev/output/github-contribution-grid-snake.svg" />
-    <img alt="Snake animation eating my GitHub contribution graph" src="https://raw.githubusercontent.com/JoshFDev/JoshFDev/output/github-contribution-grid-snake.svg" />
-  </picture>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=JoshFDev&theme=minimal&hide_border=true&line=2E86AB&point=2E86AB&area=true&area_color=2E86AB" width="100%" />
 </div>
 
 <br>
