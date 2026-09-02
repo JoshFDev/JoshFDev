@@ -71,14 +71,6 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 
 <br>
 
-## Actividad reciente
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=JoshFDev&theme=minimal&hide_border=true&line=2E86AB&point=2E86AB&area=true&area_color=2E86AB" width="100%" />
-</div>
-
-<br>
-
 ---
 
 <div align="center">
