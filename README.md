@@ -58,15 +58,14 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 
 <br>
 
-## Estadísticas de GitHub
+## GitHub
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=JoshFDev&show_icons=true&theme=default&hide_border=true&count_private=true&title_color=2E86AB&icon_color=2E86AB" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JoshFDev&layout=compact&theme=default&hide_border=true&title_color=2E86AB" />
-</div>
 
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=JoshFDev&theme=default&hide_border=true&ring=2E86AB&fire=2E86AB&currStreakLabel=2E86AB" />
+![Perfil](https://img.shields.io/badge/perfil-JoshFDev-2E86AB?style=flat-square&logo=github&logoColor=white)
+![Seguidores](https://img.shields.io/github/followers/JoshFDev?style=flat-square&color=2E86AB&label=seguidores)
+![Repositorios](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/users/JoshFDev&label=repositorios&query=%24.public_repos&style=flat-square&color=2E86AB)
+
 </div>
 
 <br>
