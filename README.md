@@ -4,7 +4,7 @@
 
 ### Backend Developer · Estudiante de Ingeniería en Computación @ UAEMex
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=2E86AB&center=true&vCenter=true&width=650&lines=Backend+Developer;Java+%7C+C%23+%7C+JavaScript+%7C+TypeScript+%7C+Python;Construyendo+APIs+y+servicios+robustos" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=2E86AB&center=true&vCenter=true&width=700&lines=Backend+Developer;Java+%7C+C%23+%7C+JavaScript+%7C+TypeScript+%7C+Python;Node.js+%7C+Express+%7C+.NET+%7C+Next.js;Construyendo+APIs+y+servicios+robustos" alt="Typing SVG" />
 
 <br>
 
@@ -27,6 +27,8 @@
 Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me interesa el ciclo completo detrás de una aplicación: diseño de APIs, modelado de bases de datos, lógica de negocio y buenas prácticas de arquitectura de software.
 
 - Trabajando actualmente con **Java, C# y JavaScript/TypeScript** en el lado del servidor
+- Construyendo APIs REST con **Node.js + Express** y **.NET**
+- Conocimientos de frontend con **React, Next.js y Angular** para integrar y consumir servicios de punta a punta
 - Profundizando en **bases de datos relacionales y no relacionales**
 - Enfocado en escribir código mantenible y con buenas prácticas de arquitectura
 - Aprendiendo de forma constante, con la mira puesta en convertirme en un backend developer sólido
@@ -43,10 +45,20 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-**Backend & Bases de datos**
+**Backend**
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+
+**Frontend**
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
+
+**Bases de datos**
+
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
@@ -55,6 +67,8 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
 
 <br>
 
