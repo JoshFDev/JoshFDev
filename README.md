@@ -27,8 +27,9 @@
 Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me interesa el ciclo completo detrás de una aplicación: diseño de APIs, modelado de bases de datos, lógica de negocio y buenas prácticas de arquitectura de software.
 
 - Trabajando actualmente con **Java, C# y JavaScript/TypeScript** en el lado del servidor
-- Construyendo APIs REST con **Node.js + Express** y **.NET**
-- Conocimientos de frontend con **React, Next.js y Angular** para integrar y consumir servicios de punta a punta
+- Construyendo APIs REST con **Spring Boot**, **Node.js + Express** y **.NET**
+- Experiencia con el ecosistema Java: **Spring** y **JavaServer Faces (JSF)**
+- Conocimientos de frontend con **React, Next.js, Angular y Bootstrap** para integrar y consumir servicios de punta a punta
 - Profundizando en **bases de datos relacionales y no relacionales**
 - Enfocado en escribir código mantenible y con buenas prácticas de arquitectura
 - Aprendiendo de forma constante, con la mira puesta en convertirme en un backend developer sólido
@@ -49,6 +50,9 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![JavaServer Faces](https://img.shields.io/badge/JavaServer_Faces-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 
 **Frontend**
@@ -56,6 +60,7 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 
 **Bases de datos**
 
