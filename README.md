@@ -75,6 +75,13 @@ Estudiante de Ingeniería en Computación enfocado en el desarrollo backend. Me 
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
 
+**Desarrollo asistido por IA**
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
+![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square)
+![OpenCode](https://img.shields.io/badge/OpenCode-211E1E?style=flat-square)
+![Big Pickle](https://img.shields.io/badge/Big_Pickle-2E86AB?style=flat-square)
+
 <br>
 
 ## GitHub
