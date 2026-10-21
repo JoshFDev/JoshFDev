@@ -1,63 +1,124 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:0B3D2E&height=140&section=header&text=Joshua%20Sebasti%C3%A1n%20Aboytes%20Uribe&fontSize=34&fontColor=FFFFFF&fontAlignY=44&desc=Backend%20Developer&descSize=18&descAlignY=70&descColor=00B84F" alt="Joshua Sebastián Aboytes Uribe" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3D2E,100:00B84F&height=200&section=header&text=Joshua%20Sebasti%C3%A1n%20Aboytes%20Uribe&fontSize=36&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%C2%B7%20Computer%20Engineering%20Student&descSize=16&descAlignY=60&descColor=C9D1D9" alt="Joshua Sebastián Aboytes Uribe" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=16&pause=1600&color=9FB3C8&center=true&vCenter=true&width=600&lines=REST+APIs+%C2%B7+Architecture+%C2%B7+Databases;Java+%C2%B7+C%23+%C2%B7+TypeScript+%C2%B7+Node.js" alt="Focus" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1400&color=00B84F&center=true&vCenter=true&width=720&lines=Designing+and+building+REST+APIs;Java+%7C+C%23+%7C+JavaScript+%7C+TypeScript+%7C+Python;Spring+Boot+%7C+Node.js+%7C+.NET;Clean+architecture+and+maintainable+code" alt="Backend Developer" />
 
 <br>
 
-<a href="https://www.linkedin.com/in/aboytes-uribe-joshua-sebasti%C3%A1n-419511281"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="mailto:sebastianaboytes199@gmail.com"><img src="https://img.shields.io/badge/Email-161B22?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://www.linkedin.com/in/aboytes-uribe-joshua-sebasti%C3%A1n-419511281" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="mailto:sebastianaboytes199@gmail.com"><img src="https://img.shields.io/badge/Email-00B84F?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://github.com/JoshFDev"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 
 </div>
 
 <br>
 
-## About
+## About me
 
-Computer Engineering student focused on backend: APIs, data modeling and business logic on a maintainable architecture.
+Computer Engineering student focused on **backend** development. I'm interested in the full lifecycle behind an application: API design, data modeling and business logic on top of an architecture that can be maintained and scaled.
+
+I work with **Java (Spring Boot)**, **C# (.NET)** and **JavaScript/TypeScript (Node.js)**, and use frontend tools to integrate and consume services end to end.
+
+> **Currently:** going deeper into relational and non-relational databases, and into software architecture best practices.
 
 <br>
 
-## Stack
+## How I work
 
-**Languages**  
-![Java](https://img.shields.io/badge/Java-161B22?style=flat-square&logo=openjdk&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-161B22?style=flat-square&logo=csharp&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-161B22?style=flat-square&logo=javascript&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-161B22?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-161B22?style=flat-square&logo=python&logoColor=white)
+- **Architecture first.** Well-separated layers and clear responsibilities, so the system can grow without breaking.
+- **Predictable APIs.** Consistent contracts, validation and error handling, tested before they are integrated.
+- **Maintainable code.** Readable, with expressive names and good practices, thinking of whoever reads it next.
 
-**Backend**  
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-161B22?style=flat-square&logo=springboot&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-161B22?style=flat-square&logo=spring&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-161B22?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-161B22?style=flat-square&logo=express&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-161B22?style=flat-square&logo=dotnet&logoColor=white)
-![JSF](https://img.shields.io/badge/JavaServer_Faces-161B22?style=flat-square&logo=openjdk&logoColor=white)
+<br>
 
-**Frontend**  
-![React](https://img.shields.io/badge/React-161B22?style=flat-square&logo=react&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-161B22?style=flat-square&logo=nextdotjs&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-161B22?style=flat-square&logo=angular&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-161B22?style=flat-square&logo=bootstrap&logoColor=white)
+## Tech stack
 
-**Databases**  
-![MySQL](https://img.shields.io/badge/MySQL-161B22?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-161B22?style=flat-square&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-161B22?style=flat-square&logo=mongodb&logoColor=white)
+<div align="center">
 
-**Tools**  
-![Git](https://img.shields.io/badge/Git-161B22?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-161B22?style=flat-square&logo=github&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-161B22?style=flat-square&logo=postman&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-161B22?style=flat-square&logo=jira&logoColor=white)
+<b>LANGUAGES</b><br>
+<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+<img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
 
-**AI**  
-![Claude Code](https://img.shields.io/badge/Claude_Code-161B22?style=flat-square&logo=claude&logoColor=white)
-![Codex](https://img.shields.io/badge/Codex-161B22?style=flat-square&logo=openai&logoColor=white)
-![OpenCode](https://img.shields.io/badge/OpenCode-161B22?style=flat-square)
-![Big Pickle](https://img.shields.io/badge/Big_Pickle-161B22?style=flat-square)
+<br><br>
+
+<b>BACKEND</b><br>
+<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+<img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+<img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
+<img src="https://img.shields.io/badge/JavaServer_Faces-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="JavaServer Faces" />
+
+<br><br>
+
+<b>FRONTEND</b><br>
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" alt="Angular" />
+<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+
+<br><br>
+
+<b>DATABASES</b><br>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
+
+<br><br>
+
+<b>TOOLS</b><br>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman" />
+<img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white" alt="Jira" />
+
+<br><br>
+
+<b>AI-ASSISTED DEVELOPMENT</b><br>
+<img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude Code" />
+<img src="https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white" alt="Codex" />
+<img src="https://img.shields.io/badge/OpenCode-211E1E?style=flat-square" alt="OpenCode" />
+<img src="https://img.shields.io/badge/Big_Pickle-00B84F?style=flat-square" alt="Big Pickle" />
+
+</div>
+
+<br>
+
+<details>
+<summary><b>What do I use each tool for?</b></summary>
+<br>
+
+**Languages**
+- **Java:** business logic and APIs with Spring; the core of my backend work.
+- **C#:** services and APIs on .NET.
+- **JavaScript / TypeScript:** server-side with Node.js, with static typing for safer code.
+- **Python:** scripting, automation and quick prototyping.
+
+**Backend**
+- **Spring Boot / Spring:** services and REST APIs with dependency injection and fast configuration.
+- **Node.js + Express:** lightweight REST APIs on JavaScript.
+- **.NET:** services built with C# on Microsoft's platform.
+- **JavaServer Faces:** component-based, server-side web interfaces.
+
+**Frontend**
+- **React / Next.js:** component-based UIs and server-side rendering to consume my APIs.
+- **Angular:** structured applications with TypeScript.
+- **Bootstrap:** fast, consistent responsive layouts.
+
+**Databases**
+- **MySQL / PostgreSQL:** relational modeling, SQL queries and data integrity.
+- **MongoDB:** document-oriented database for flexible data.
+
+**Tools and AI**
+- **Git / GitHub:** version control and automation with Actions.
+- **Postman / Jira:** testing endpoints and managing work in an agile way.
+- **Claude Code, Codex, OpenCode, Big Pickle:** support for exploring, reviewing and refactoring code. I review and validate everything that goes into my projects.
+
+</details>
 
 <br>
 
@@ -81,7 +142,6 @@ Computer Engineering student focused on backend: APIs, data modeling and busines
 
 </div>
 
-<!--
 Optional: contribution snake. Remove these comment marks to show it.
 
 <div align="center">
@@ -91,23 +151,30 @@ Optional: contribution snake. Remove these comment marks to show it.
     <img alt="Contributions" src="https://raw.githubusercontent.com/JoshFDev/JoshFDev/output/github-contribution-grid-snake.svg" width="100%" />
   </picture>
 </div>
--->
 
-<!--
+
 Optional: featured projects. Replace REPO_NAME with your repositories.
 
-## Projects
+## Featured projects
 
 <div align="center">
-<a href="https://github.com/JoshFDev/REPO_NAME_1"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JoshFDev&repo=REPO_NAME_1&bg_color=0D1117&border_color=30363D&title_color=00B84F&text_color=C9D1D9&icon_color=9FB3C8" /></a>
-<a href="https://github.com/JoshFDev/REPO_NAME_2"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JoshFDev&repo=REPO_NAME_2&bg_color=0D1117&border_color=30363D&title_color=00B84F&text_color=C9D1D9&icon_color=9FB3C8" /></a>
+<a href="https://github.com/JoshFDev/REPO_NAME_1"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JoshFDev&repo=REPO_NAME_1&bg_color=0D1117&border_color=30363D&title_color=00B84F&text_color=C9D1D9&icon_color=2E86AB" /></a>
+<a href="https://github.com/JoshFDev/REPO_NAME_2"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JoshFDev&repo=REPO_NAME_2&bg_color=0D1117&border_color=30363D&title_color=00B84F&text_color=C9D1D9&icon_color=2E86AB" /></a>
 </div>
--->
 
 <br>
 
 <div align="center">
-  <sub>Star Wars · Superman · Green Lantern (John Stewart)</sub>
-</div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,100:0B3D2E&height=50&section=footer" alt="" width="100%" />
+<sub><b>BEYOND THE CODE</b></sub><br>
+<img src="https://img.shields.io/badge/Star_Wars-FFE81F?style=flat-square" alt="Star Wars" />
+<img src="https://img.shields.io/badge/Superman-1565C0?style=flat-square" alt="Superman" />
+<img src="https://img.shields.io/badge/Green_Lantern_%C2%B7_John_Stewart-00B84F?style=flat-square" alt="Green Lantern, John Stewart" />
+
+<br><br>
+
+<sub>Willpower, precision and consistency. Thanks for visiting my profile.</sub>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3D2E,100:00B84F&height=90&section=footer" alt="" width="100%" />
+
+</div>
