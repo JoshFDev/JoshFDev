@@ -2,9 +2,10 @@
 """
 Genera assets/contribution-fighter.svg
 
-Una nave recorre tu gráfica de contribuciones de GitHub y destruye, columna por
-columna, los días en los que hiciste commits. Usa SMIL (animación dentro del SVG),
-así que funciona dentro de un README sin JavaScript.
+Una nave recorre tu gráfica de contribuciones de GitHub y destruye, de uno en uno,
+cada día en el que hiciste commits: un disparo por blanco, alternando cañones,
+con impacto y explosión. Usa SMIL (animación dentro del SVG), así que funciona
+dentro de un README sin JavaScript.
 
 Variables de entorno:
   GH_TOKEN   token de GitHub (obligatorio, salvo con DEMO=1)
@@ -13,19 +14,27 @@ Variables de entorno:
   DEMO=1     usa datos aleatorios, útil para probar sin token
 """
 import json
+import math
 import os
 import random
 import sys
 import urllib.request
 
 # --------------------------------------------------------------------------- #
-# Configuración visual
+# Configuración visual y de ritmo
 # --------------------------------------------------------------------------- #
 CELL, GAP = 11, 3
 PITCH = CELL + GAP
 ROWS = 7
 PAD_X, PAD_TOP = 24, 26
-SWEEP = 24.0  # segundos que tarda la nave en recorrer la gráfica
+
+INTRO = 0.9            # s que tarda la nave en entrar
+FIRE_TARGET = 10.0     # s aprox. que dura toda la ráfaga de disparos
+DT_MIN, DT_MAX = 0.035, 0.07  # intervalo entre disparos (s)
+BOLT_SPEED = 650.0     # px/s
+MOVE_BASE = 0.07       # s para pasar a la siguiente columna
+MOVE_PER_COL = 0.01    # s extra por cada columna que se salta
+CANNON_X = 18.6        # separación de los cañones respecto al centro de la nave
 
 LEVEL_COLORS = ["#161B22", "#0E4429", "#006D32", "#26A641", "#39D353"]
 LEVEL_NAMES = {
@@ -73,10 +82,10 @@ def fetch_weeks(user, token):
 
 def demo_weeks(n=53):
     rnd = random.Random(7)
-    weeks = []
-    for _ in range(n):
-        weeks.append([(d, rnd.choices([0, 1, 2, 3, 4], [38, 24, 18, 12, 8])[0]) for d in range(7)])
-    return weeks
+    return [
+        [(d, rnd.choices([0, 1, 2, 3, 4], [38, 24, 18, 12, 8])[0]) for d in range(7)]
+        for _ in range(n)
+    ]
 
 
 # --------------------------------------------------------------------------- #
@@ -86,114 +95,196 @@ def f(v):
     return f"{v:.4f}".rstrip("0").rstrip(".")
 
 
-def keytimes(*ts):
-    assert all(a < b for a, b in zip(ts, ts[1:])), f"keyTimes no crecientes: {ts}"
-    return ";".join(f(t) for t in ts)
+def kt(times, total):
+    """keyTimes normalizados; exige que sean estrictamente crecientes."""
+    norm = [round(t / total, 6) for t in times]
+    assert norm[0] == 0 and norm[-1] == 1, norm
+    assert all(a < b for a, b in zip(norm, norm[1:])), f"keyTimes no crecientes: {times}"
+    return ";".join(f"{v:.6f}".rstrip("0").rstrip(".") or "0" for v in norm)
+
+
+def clamp(v, lo, hi):
+    return max(lo, min(hi, v))
 
 
 # --------------------------------------------------------------------------- #
-# Construcción del SVG
+# Planeación de la secuencia (qué se dispara, cuándo y desde dónde)
 # --------------------------------------------------------------------------- #
-def build_svg(weeks):
+def plan(weeks):
     n = len(weeks)
     width = PAD_X * 2 + n * PITCH - GAP
     grid_bottom = PAD_TOP + ROWS * PITCH - GAP
     ship_y = grid_bottom + 50
     height = ship_y + 30
-    total = SWEEP + 4.0
 
     def col_x(c):
         return PAD_X + c * PITCH + CELL / 2
 
-    x_first, x_last = col_x(0), col_x(n - 1)
+    targets = {}
+    for c, week in enumerate(weeks):
+        cells = sorted([(wd, lv) for wd, lv in week if lv > 0], key=lambda t: -t[0])  # de abajo hacia arriba
+        if cells:
+            targets[c] = cells
+    cols = sorted(targets)
+    total_shots = sum(len(v) for v in targets.values())
+    dt = clamp(FIRE_TARGET / max(total_shots, 1), DT_MIN, DT_MAX)
 
-    def hit_time(c):
-        return 1.0 + SWEEP * c / max(n - 1, 1)
+    ship_kf = [(0.0, -60.0)]   # (tiempo, x)
+    rot_kf = [(0.0, 0.0)]      # (tiempo, grados)
+    shots = []
+    cur = INTRO
+    k = 0
+    exit_end = INTRO
 
-    out = []
-    add = out.append
-    add(
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
-        f'viewBox="0 0 {width} {height}" role="img" '
-        f'aria-label="Nave espacial destruyendo la gráfica de contribuciones">'
-    )
-    add(
-        '<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
-        '<stop offset="0" stop-color="#0D1117"/><stop offset="1" stop-color="#0B1F17"/>'
-        "</linearGradient>"
-        '<linearGradient id="beam" x1="0" y1="1" x2="0" y2="0">'
-        '<stop offset="0" stop-color="#39D353"/><stop offset="1" stop-color="#B7FFC9"/>'
-        "</linearGradient></defs>"
-    )
-    add(f'<rect x=".5" y=".5" width="{width - 1}" height="{height - 1}" rx="10" fill="url(#bg)" stroke="#30363D"/>')
+    for i, c in enumerate(cols):
+        x = col_x(c)
+        arrive = cur
+        ship_kf.append((arrive, x))
+        rot_kf.append((arrive, 0.0))
+        for wd, lv in targets[c]:
+            side = -1 if k % 2 == 0 else 1
+            sx, sy = x + side * CANNON_X, ship_y + 8
+            tx, ty = x, PAD_TOP + wd * PITCH + CELL / 2
+            fire = cur
+            hit = fire + math.hypot(tx - sx, ty - sy) / BOLT_SPEED
+            shots.append(
+                dict(fire=fire, hit=hit, side=side, sx=sx, sy=sy, tx=tx, ty=ty,
+                     col=c, row=wd, level=lv,
+                     angle=math.degrees(math.atan2(ty - sy, tx - sx)))
+            )
+            cur += dt
+            k += 1
+        hold_end = cur - dt + 0.02
+        ship_kf.append((hold_end, x))
+        rot_kf.append((hold_end, 0.0))
+        if i + 1 < len(cols):
+            gap = cols[i + 1] - c
+            move = MOVE_BASE + MOVE_PER_COL * (gap - 1)
+            rot_kf.append((hold_end + move / 2, 9.0))
+            cur = hold_end + move
+        else:
+            exit_end = hold_end + 0.9
+            ship_kf.append((exit_end, width + 60.0))
+            rot_kf.append((hold_end + 0.45, 11.0))
+            rot_kf.append((exit_end, 11.0))
 
-    # Estrellas
+    last_hit = max((s["hit"] for s in shots), default=INTRO)
+    total = max(exit_end, last_hit) + 0.5 + 1.0
+    if not shots:  # perfil sin actividad: la nave solo cruza la pantalla
+        ship_kf = [(0.0, -60.0), (INTRO, width / 2), (INTRO + 1.5, width + 60.0)]
+        rot_kf = [(0.0, 0.0), (INTRO + 1.5, 0.0)]
+        total = INTRO + 3.0
+    ship_kf.append((total, ship_kf[-1][1]))
+    rot_kf.append((total, rot_kf[-1][1]))
+
+    return dict(width=width, height=height, ship_y=ship_y, total=total, dt=dt,
+                ship_kf=ship_kf, rot_kf=rot_kf, shots=shots, weeks=weeks)
+
+
+# --------------------------------------------------------------------------- #
+# Dibujo
+# --------------------------------------------------------------------------- #
+def star_markup(width, height):
     rnd = random.Random(21)
-    for i in range(70):
-        sx, sy = rnd.uniform(8, width - 8), rnd.uniform(8, height - 8)
+    parts = []
+    for _ in range(45):
+        sx, sy = rnd.uniform(6, width - 6), rnd.uniform(0, height)
         r = rnd.choice([0.5, 0.6, 0.8, 1.0])
         op = rnd.uniform(0.25, 0.7)
-        if i % 5 == 0:
-            add(
-                f'<circle cx="{f(sx)}" cy="{f(sy)}" r="{r}" fill="#C9D1D9" opacity="{f(op)}">'
-                f'<animate attributeName="opacity" values="{f(op)};{f(min(op + .3, 1))};{f(op)}" '
-                f'dur="{f(rnd.uniform(2.5, 5))}s" begin="{f(rnd.uniform(0, 3))}s" repeatCount="indefinite"/></circle>'
-            )
-        else:
-            add(f'<circle cx="{f(sx)}" cy="{f(sy)}" r="{r}" fill="#C9D1D9" opacity="{f(op)}"/>')
+        parts.append(f'<circle cx="{f(sx)}" cy="{f(sy)}" r="{r}" fill="#C9D1D9" opacity="{f(op)}"/>')
+    return "".join(parts)
 
-    # Celdas (los días con actividad se destruyen)
-    targets_by_col = {}
+
+def build_svg(weeks):
+    p = plan(weeks)
+    W, H, ship_y, T = p["width"], p["height"], p["ship_y"], p["total"]
+    out = []
+    add = out.append
+
+    add(
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" '
+        f'role="img" aria-label="Nave espacial destruyendo la gráfica de contribuciones">'
+    )
+    add(
+        '<defs>'
+        '<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">'
+        '<stop offset="0" stop-color="#0D1117"/><stop offset="1" stop-color="#0B1F17"/></linearGradient>'
+        '<linearGradient id="bolt" x1="0" y1="0" x2="1" y2="0">'
+        '<stop offset="0" stop-color="#39D353" stop-opacity="0"/>'
+        '<stop offset="1" stop-color="#D9FFE3"/></linearGradient>'
+        '</defs>'
+    )
+    add(f'<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="10" fill="url(#bg)" stroke="#30363D"/>')
+
+    # Estrellas que bajan: da sensación de velocidad
+    stars = star_markup(W, H)
+    add(
+        f'<g>{stars}<animateTransform attributeName="transform" type="translate" '
+        f'values="0,0;0,{H}" dur="5s" repeatCount="indefinite"/></g>'
+    )
+    add(
+        f'<g transform="translate(0 {-H})">{stars}<animateTransform attributeName="transform" type="translate" '
+        f'values="0,{-H};0,0" dur="5s" repeatCount="indefinite"/></g>'
+    )
+
+    # Celdas vacías (no se destruyen)
     for c, week in enumerate(weeks):
-        for weekday, level in week:
-            x = PAD_X + c * PITCH
-            y = PAD_TOP + weekday * PITCH
-            if level == 0:
-                add(f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" fill="{LEVEL_COLORS[0]}"/>')
-                continue
-            th = hit_time(c) + (ROWS - 1 - weekday) * 0.03
-            targets_by_col.setdefault(c, []).append(th)
-            kt = keytimes(0, th / total, (th + 0.12) / total, (total - 1.0) / total, 1)
-            add(
-                f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" fill="{LEVEL_COLORS[level]}">'
-                f'<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="{kt}" dur="{f(total)}s" repeatCount="indefinite"/>'
-                f"</rect>"
-            )
-            # Explosión
-            ke = keytimes(0, (th - 0.01) / total, th / total, (th + 0.4) / total, 1)
-            cx, cy = x + CELL / 2, y + CELL / 2
-            add(
-                f'<circle cx="{f(cx)}" cy="{f(cy)}" r="0" fill="none" stroke="#7CFFA0" stroke-width="1.2" opacity="0">'
-                f'<animate attributeName="r" values="0;0;1;8;8" keyTimes="{ke}" dur="{f(total)}s" repeatCount="indefinite"/>'
-                f'<animate attributeName="opacity" values="0;0;.9;0;0" keyTimes="{ke}" dur="{f(total)}s" repeatCount="indefinite"/>'
-                f"</circle>"
-            )
+        for wd, lv in week:
+            if lv == 0:
+                add(f'<rect x="{PAD_X + c * PITCH}" y="{PAD_TOP + wd * PITCH}" width="{CELL}" height="{CELL}" rx="2" fill="{LEVEL_COLORS[0]}"/>')
 
-    # Láseres
-    beam_top = PAD_TOP - 4
-    beam_h = (ship_y - 20) - beam_top
-    for c in sorted(targets_by_col):
-        t = hit_time(c)
-        kb = keytimes(0, (t - 0.05) / total, t / total, (t + 0.12) / total, (t + 0.25) / total, 1)
+    # Celdas con actividad + impacto + proyectil (uno por blanco)
+    for s in p["shots"]:
+        x, y = PAD_X + s["col"] * PITCH, PAD_TOP + s["row"] * PITCH
+        th, fire = s["hit"], s["fire"]
+        # Celda
         add(
-            f'<rect x="{f(col_x(c) - 1)}" y="{beam_top}" width="2" height="{beam_h}" rx="1" fill="url(#beam)" opacity="0">'
-            f'<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="{kb}" dur="{f(total)}s" repeatCount="indefinite"/>'
-            f"</rect>"
+            f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" rx="2" fill="{LEVEL_COLORS[s["level"]]}">'
+            f'<animate attributeName="opacity" values="1;1;0;0;1" '
+            f'keyTimes="{kt([0, th, th + 0.08, T - 1.0, T], T)}" dur="{f(T)}s" repeatCount="indefinite"/></rect>'
+        )
+        cx, cy = s["tx"], s["ty"]
+        # Anillo de explosión
+        ke = kt([0, th - 0.002, th, th + 0.4, T], T)
+        add(
+            f'<circle cx="{f(cx)}" cy="{f(cy)}" r="0" fill="none" stroke="#7CFFA0" stroke-width="1.2" opacity="0">'
+            f'<animate attributeName="r" values="0;0;1;9;9" keyTimes="{ke}" dur="{f(T)}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="opacity" values="0;0;.9;0;0" keyTimes="{ke}" dur="{f(T)}s" repeatCount="indefinite"/></circle>'
+        )
+        # Destello central
+        kc = kt([0, th - 0.002, th, th + 0.16, T], T)
+        add(
+            f'<circle cx="{f(cx)}" cy="{f(cy)}" r="3.5" fill="#E6FFEC" opacity="0">'
+            f'<animate attributeName="opacity" values="0;0;1;0;0" keyTimes="{kc}" dur="{f(T)}s" repeatCount="indefinite"/></circle>'
+        )
+        # Proyectil
+        kb_pos = kt([0, fire, th, T], T)
+        kb_op = kt([0, fire - 0.002, fire, th, th + 0.002, T], T)
+        a, b = f'{f(s["sx"])},{f(s["sy"])}', f'{f(s["tx"])},{f(s["ty"])}'
+        add(
+            f'<g transform="translate({f(s["sx"])} {f(s["sy"])})" opacity="0">'
+            f'<animateTransform attributeName="transform" type="translate" values="{a};{a};{b};{b}" '
+            f'keyTimes="{kb_pos}" dur="{f(T)}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="{kb_op}" dur="{f(T)}s" repeatCount="indefinite"/>'
+            f'<g transform="rotate({f(s["angle"])})"><rect x="-11" y="-1.1" width="11" height="2.2" rx="1.1" fill="url(#bolt)"/></g></g>'
         )
 
-    # Nave (diseño original, vista cenital)
-    ks = keytimes(0, 1.0 / total, (1.0 + SWEEP) / total, (2.0 + SWEEP) / total, 1)
-    values = ";".join(
-        f"{f(x)},{ship_y}" for x in (x_first - 60, x_first, x_last, x_last + 70, x_last + 70)
-    )
-    add(f'<g transform="translate({f(x_first - 60)} {ship_y})">')
+    # Nave: grupo exterior = posición, grupo interior = inclinación al desplazarse
+    ship_vals = ";".join(f"{f(x)},{ship_y}" for _, x in p["ship_kf"])
+    rot_vals = ";".join(f(a) for _, a in p["rot_kf"])
+    add(f'<g transform="translate({f(p["ship_kf"][0][1])} {ship_y})">')
     add(
-        f'<animateTransform attributeName="transform" type="translate" values="{values}" '
-        f'keyTimes="{ks}" dur="{f(total)}s" repeatCount="indefinite"/>'
+        f'<animateTransform attributeName="transform" type="translate" values="{ship_vals}" '
+        f'keyTimes="{kt([t for t, _ in p["ship_kf"]], T)}" dur="{f(T)}s" repeatCount="indefinite"/>'
+    )
+    add("<g>")
+    add(
+        f'<animateTransform attributeName="transform" type="rotate" values="{rot_vals}" '
+        f'keyTimes="{kt([t for t, _ in p["rot_kf"]], T)}" dur="{f(T)}s" repeatCount="indefinite"/>'
     )
     add(
         '<path d="M-3,10 L0,19 L3,10Z" fill="#39D353">'
-        '<animate attributeName="opacity" values="1;.45;1" dur=".25s" repeatCount="indefinite"/></path>'
+        '<animate attributeName="opacity" values="1;.45;1" dur=".2s" repeatCount="indefinite"/></path>'
     )
     add('<path d="M-4,-1 L-19,13 L-19,16 L-4,10Z" fill="#8B949E"/>')
     add('<path d="M4,-1 L19,13 L19,16 L4,10Z" fill="#8B949E"/>')
@@ -204,10 +295,26 @@ def build_svg(weeks):
     add('<path d="M0,-19 L5,-5 L5,11 L-5,11 L-5,-5Z" fill="#C9D1D9"/>')
     add('<path d="M0,-12 L2.8,-5 L-2.8,-5Z" fill="#0B3D2E" stroke="#39D353" stroke-width=".8"/>')
     add('<rect x="-1.2" y="1" width="2.4" height="8" rx="1" fill="#00B84F"/>')
-    add("</g>")
-
+    # Destellos en los cañones, sincronizados con cada disparo
+    for side in (-1, 1):
+        times = [s["fire"] for s in p["shots"] if s["side"] == side]
+        if not times:
+            continue
+        kts, vals = [0.0], ["0"]
+        for t in times:
+            kts += [t - 0.002, t, t + 0.05]
+            vals += ["0", "1", "0"]
+        kts.append(T)
+        vals.append("0")
+        add(
+            f'<circle cx="{f(side * CANNON_X)}" cy="7" r="3.2" fill="#E6FFEC" opacity="0">'
+            f'<animate attributeName="opacity" values="{";".join(vals)}" keyTimes="{kt(kts, T)}" '
+            f'dur="{f(T)}s" repeatCount="indefinite"/></circle>'
+        )
+    add("</g></g>")
     add("</svg>")
-    return "\n".join(out), len(targets_by_col), sum(len(v) for v in targets_by_col.values())
+
+    return "\n".join(out), p
 
 
 def main():
@@ -220,11 +327,14 @@ def main():
             sys.exit("Faltan GH_TOKEN y GH_USER (o usa DEMO=1).")
         weeks = fetch_weeks(user, token)
 
-    svg, cols, cells = build_svg(weeks)
+    svg, p = build_svg(weeks)
     os.makedirs(os.path.dirname(output) or ".", exist_ok=True)
     with open(output, "w", encoding="utf-8") as fh:
         fh.write(svg)
-    print(f"{output}: {len(weeks)} semanas, {cols} columnas con disparos, {cells} blancos")
+    print(
+        f"{output}: {len(weeks)} semanas, {len(p['shots'])} disparos, "
+        f"{p['dt'] * 1000:.0f} ms entre disparos, ciclo de {p['total']:.1f} s, {len(svg) // 1024} KB"
+    )
 
 
 if __name__ == "__main__":
