@@ -16,11 +16,11 @@
 
 ## About me
 
-Computer Engineering student focused on **backend** development. I'm interested in the full lifecycle behind an application: API design, data modeling and business logic on top of an architecture that can be maintained and scaled.
+Computer Engineering student and backend developer. I design and build REST APIs and server-side applications, from data modeling and business logic to integration with the frontend.
 
-I work with **Java (Spring Boot)**, **C# (.NET)** and **JavaScript/TypeScript (Node.js)**, and use frontend tools to integrate and consume services end to end.
+My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (JavaScript/TypeScript). I work with relational (MySQL, PostgreSQL) and non-relational (MongoDB) databases, and use React, Next.js and Angular to integrate services end to end.
 
-> **Currently:** going deeper into relational and non-relational databases, and into software architecture best practices.
+> **Currently:** deepening my knowledge of databases and software architecture.
 
 <br>
 
@@ -142,6 +142,7 @@ I work with **Java (Spring Boot)**, **C# (.NET)** and **JavaScript/TypeScript (N
 
 </div>
 
+
 Optional: contribution snake. Remove these comment marks to show it.
 
 <div align="center">
@@ -152,28 +153,9 @@ Optional: contribution snake. Remove these comment marks to show it.
   </picture>
 </div>
 
-
-Optional: featured projects. Replace REPO_NAME with your repositories.
-
-## Featured projects
-
-<div align="center">
-<a href="https://github.com/JoshFDev/REPO_NAME_1"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JoshFDev&repo=REPO_NAME_1&bg_color=0D1117&border_color=30363D&title_color=00B84F&text_color=C9D1D9&icon_color=2E86AB" /></a>
-<a href="https://github.com/JoshFDev/REPO_NAME_2"><img src="https://github-readme-stats.vercel.app/api/pin/?username=JoshFDev&repo=REPO_NAME_2&bg_color=0D1117&border_color=30363D&title_color=00B84F&text_color=C9D1D9&icon_color=2E86AB" /></a>
-</div>
-
 <br>
 
 <div align="center">
-
-<sub><b>BEYOND THE CODE</b></sub><br>
-<img src="https://img.shields.io/badge/Star_Wars-FFE81F?style=flat-square" alt="Star Wars" />
-<img src="https://img.shields.io/badge/Superman-1565C0?style=flat-square" alt="Superman" />
-<img src="https://img.shields.io/badge/Green_Lantern_%C2%B7_John_Stewart-00B84F?style=flat-square" alt="Green Lantern, John Stewart" />
-
-<br><br>
-
-<sub>Willpower, precision and consistency. Thanks for visiting my profile.</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3D2E,100:00B84F&height=90&section=footer" alt="" width="100%" />
 
