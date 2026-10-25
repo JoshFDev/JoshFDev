@@ -18,7 +18,7 @@
 
 Computer Engineering student and backend developer. I design and build REST APIs and server-side applications, from data modeling and business logic to integration with the frontend.
 
-My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (JavaScript/TypeScript). I work with relational (MySQL, PostgreSQL) and non-relational (MongoDB) databases, and use React, Next.js and Angular to integrate services end to end.
+My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (JavaScript/TypeScript). I work with relational (MySQL, PostgreSQL) and non-relational (MongoDB) databases, use Docker to containerize my services, and use React, Next.js and Angular to integrate services end to end.
 
 > **Currently:** deepening my knowledge of databases and software architecture.
 
@@ -73,6 +73,9 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (
 <b>TOOLS</b><br>
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm" />
+<img src="https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm" />
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman" />
 <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white" alt="Jira" />
 
@@ -115,6 +118,8 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (
 
 **Tools and AI**
 - **Git / GitHub:** version control and automation with Actions.
+- **Docker:** containerizing applications and databases so they run the same in any environment.
+- **npm / pnpm:** dependency management for Node.js projects; pnpm for faster installs and efficient disk usage.
 - **Postman / Jira:** testing endpoints and managing work in an agile way.
 - **Claude Code, Codex, OpenCode, Big Pickle:** support for exploring, reviewing and refactoring code. I review and validate everything that goes into my projects.
 
