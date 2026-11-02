@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3D2E,100:00B84F&height=200&section=header&text=Joshua%20Sebasti%C3%A1n%20Aboytes%20Uribe&fontSize=36&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Backend%20Developer%20%C2%B7%20Computer%20Engineering%20Student&descSize=16&descAlignY=60&descColor=C9D1D9" alt="Joshua Sebastián Aboytes Uribe" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3D2E,100:00B84F&height=200&section=header&text=Joshua%20Sebasti%C3%A1n%20Aboytes%20Uribe&fontSize=36&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%C2%B7%20Computer%20Engineering%20Student&descSize=16&descAlignY=60&descColor=C9D1D9" alt="Joshua Sebastián Aboytes Uribe" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1400&color=00B84F&center=true&vCenter=true&width=720&lines=Designing+and+building+REST+APIs;Java+%7C+C%23+%7C+JavaScript+%7C+TypeScript+%7C+Python;Spring+Boot+%7C+Node.js+%7C+.NET;Clean+architecture+and+maintainable+code" alt="Backend Developer" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1400&color=00B84F&center=true&vCenter=true&width=720&lines=Designing+and+building+REST+APIs;Java+%7C+C%23+%7C+JavaScript+%7C+TypeScript+%7C+Python;Spring+Boot+%7C+Node.js+%7C+.NET;Clean+architecture+and+maintainable+code" alt="Software Developer" />
 
 <br>
 
@@ -16,9 +16,9 @@
 
 ## About me
 
-Computer Engineering student and backend developer. I design and build REST APIs and server-side applications, from data modeling and business logic to integration with the frontend.
+Computer Engineering student and software developer. I design and build REST APIs and server-side applications, from data modeling and business logic to integration with the frontend.
 
-My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (JavaScript/TypeScript). I work with relational (MySQL, PostgreSQL) and non-relational (MongoDB) databases, use Docker to containerize my services, and use React, Next.js and Angular to integrate services end to end.
+My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express and NestJS (JavaScript/TypeScript). I work with relational (MySQL, PostgreSQL, MariaDB) and non-relational (MongoDB) databases, use Docker to containerize my services, and use React and Angular to integrate services end to end.
 
 > **Currently:** deepening my knowledge of databases and software architecture.
 
@@ -50,6 +50,7 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring" />
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
 <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express" />
+<img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt="NestJS" />
 <img src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET" />
 <img src="https://img.shields.io/badge/JavaServer_Faces-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="JavaServer Faces" />
 
@@ -57,7 +58,6 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (
 
 <b>FRONTEND</b><br>
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
 <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" alt="Angular" />
 <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white" alt="Bootstrap" />
 
@@ -66,6 +66,7 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (
 <b>DATABASES</b><br>
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
 <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+<img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white" alt="MariaDB" />
 <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" alt="MongoDB" />
 
 <br><br>
@@ -104,16 +105,17 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (
 **Backend**
 - **Spring Boot / Spring:** services and REST APIs with dependency injection and fast configuration.
 - **Node.js + Express:** lightweight REST APIs on JavaScript.
+- **NestJS:** structured, modular server-side applications on TypeScript, with dependency injection and a clear architecture.
 - **.NET:** services built with C# on Microsoft's platform.
 - **JavaServer Faces:** component-based, server-side web interfaces.
 
 **Frontend**
-- **React / Next.js:** component-based UIs and server-side rendering to consume my APIs.
+- **React:** component-based UIs to consume my APIs.
 - **Angular:** structured applications with TypeScript.
 - **Bootstrap:** fast, consistent responsive layouts.
 
 **Databases**
-- **MySQL / PostgreSQL:** relational modeling, SQL queries and data integrity.
+- **MySQL / PostgreSQL / MariaDB:** relational modeling, SQL queries and data integrity.
 - **MongoDB:** document-oriented database for flexible data.
 
 **Tools and AI**
@@ -138,7 +140,7 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express (
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/3-stats.svg">
-  <img alt="Stats" src="./profile-summary-card-output/github/3-stats.svg" width="340">
+  <img alt="Stats" src="./profile-summary-card-output/github_dark/3-stats.svg" width="340">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/1-repos-per-language.svg">
