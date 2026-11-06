@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:0B3D2E,100:00B84F&height=200&section=header&text=Joshua%20Sebasti%C3%A1n%20Aboytes%20Uribe&fontSize=36&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%C2%B7%20Computer%20Engineering%20Student&descSize=16&descAlignY=60&descColor=C9D1D9" alt="Joshua Sebastián Aboytes Uribe" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1400&color=00B84F&center=true&vCenter=true&width=720&lines=Designing+and+building+REST+APIs;Java+%7C+C%23+%7C+JavaScript+%7C+TypeScript+%7C+Python;Spring+Boot+%7C+Node.js+%7C+.NET;Clean+architecture+and+maintainable+code" alt="Software Developer" />
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1400&color=00B84F&center=true&vCenter=true&width=720&lines=Designing+and+building+REST+APIs;Java+%7C+Kotlin+%7C+C%23+%7C+JavaScript+%7C+TypeScript+%7C+Python;Spring+Boot+%7C+Node.js+%7C+.NET;Clean+architecture+and+maintainable+code" alt="Software Developer" />
 
 <br>
 
@@ -18,7 +18,7 @@
 
 Computer Engineering student and software developer. I design and build REST APIs and server-side applications, from data modeling and business logic to integration with the frontend.
 
-My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express and NestJS (JavaScript/TypeScript). I work with relational (MySQL, PostgreSQL, MariaDB) and non-relational (MongoDB) databases, use Docker to containerize my services, and use React and Angular to integrate services end to end.
+My main stack is Java with Spring Boot, Kotlin, C# with .NET, and Node.js with Express and NestJS (JavaScript/TypeScript). I work with relational (MySQL, PostgreSQL, MariaDB) and non-relational (MongoDB) databases, use Docker to containerize my services, and use React and Angular to integrate services end to end.
 
 > **Currently:** deepening my knowledge of databases and software architecture.
 
@@ -38,6 +38,7 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express a
 
 <b>LANGUAGES</b><br>
 <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
 <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -79,6 +80,7 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express a
 <img src="https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm" />
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman" />
 <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white" alt="Jira" />
+<img src="https://img.shields.io/badge/DB_Browser_for_SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="DB Browser for SQLite" />
 
 <br><br>
 
@@ -98,6 +100,7 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express a
 
 **Languages**
 - **Java:** business logic and APIs with Spring; the core of my backend work.
+- **Kotlin:** concise, null-safe code on the JVM, fully interoperable with Java and Spring.
 - **C#:** services and APIs on .NET.
 - **JavaScript / TypeScript:** server-side with Node.js, with static typing for safer code.
 - **Python:** scripting, automation and quick prototyping.
@@ -123,6 +126,7 @@ My main stack is Java with Spring Boot, C# with .NET, and Node.js with Express a
 - **Docker:** containerizing applications and databases so they run the same in any environment.
 - **npm / pnpm:** dependency management for Node.js projects; pnpm for faster installs and efficient disk usage.
 - **Postman / Jira:** testing endpoints and managing work in an agile way.
+- **DB Browser for SQLite:** visually inspecting, querying and editing SQLite databases during development and testing.
 - **Claude Code, Codex, OpenCode, Big Pickle:** support for exploring, reviewing and refactoring code. I review and validate everything that goes into my projects.
 
 </details>
